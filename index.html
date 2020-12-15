@@ -5,43 +5,61 @@
     <meta charset="UTF-8" />
     <title>Survey Form</title>
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+        body{background: linear-gradient(rgb(238, 149, 149),green);
+        }
+        #center{margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;}
+    </style>
+
 </head>
 
-<body>
+<body><center>
     <h1 id="title">Survey Form</h1>
     <p id="description">This is is a Survey for everyone</p>
     <form id="survey-form">
         <label id="name-label" for="name">Name: </label>
         <input type="text" id="name" placeholder="Enter your Name" required />
-        <label id="email-label" for="email">Email: </label>
+       <br> <label id="email-label" for="email">Email: </label>
         <input type="email" id="email" placeholder="Enter your Email" required />
-        <label id="number-label" for="number">Number: </label>
+       <br> <label id="number-label" for="number">Number: </label>
 
-        <input type="number" id="number" min="1" max="10" placeholder="Enter your Number" required />
-        <select name="dropdown" id="dropdown">
-        <option value="Morocco">Morocco</option>
-        <option value="Belgeum">Belgeum</option>
-      </select>
-
+         <input type="number" id="number" min="1" max="10" placeholder="Enter your Number" required />
+       <br>
+       <label>Country: </label>
+       <select name="dropdown" id="dropdown">
+           
+        <option  value="Morocco">Morocco</option>
+        <option value="Belgium">Belgium</option>
+      </select> <br>
+        <label>value: 1</label>
         <input type="radio" name="first" value="1" />
+        <label>value: 2</label>
         <input type="radio" name="first" value="2" />
-
+        <br>    
+        <label>value: 3</label>
         <input type="radio" name="secound" value="3" />
+        <label> value: 4</label>
         <input type="radio" name="secound" value="4" />
-
+        <br>
+        <Label>value: first</Label>
         <input type="checkbox" name="one" value="first" />
+        <Label>value: second</Label>
         <input type="checkbox" name="one" value="secound" />
-
+        <br>
+        <Label>value: third</Label>
         <input type="checkbox" name="two" value="third" />
+        <Label>value: fourth</Label>
         <input type="checkbox" name="two" value="fourth" />
-
+        <br>
         <textarea name="textarea" cols="30" rows="10"></textarea>
-        <button id="submit">Submit</button>
+       <br> <button id="submit">Submit</button>
     </form>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <script src="js/index.js"></script>
+    <script src="js/index.js"></script></center>>
 </body>
 
 </html>
